@@ -4,7 +4,7 @@ ConfigOptions
 Install
 =======
 To install ConfigOptions, simply do:
-    $ pip3 install https://github.com/obarisk/configoptions.py/archive/master.zip
+    > pip3 install https://github.com/obarisk/configoptions.py/archive/master.zip
 
 Usage
 =====

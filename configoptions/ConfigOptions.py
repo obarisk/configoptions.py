@@ -28,4 +28,7 @@ class ConfigOptions:
                         ndict = yaml.load(f)
                     for k in ndict:
                         opts.update({k: ndict.get(k)})
-            self.opts = opts
+        if len(val):
+            for k in val:
+                opts.update({k: val.get(k)})
+        self.opts = opts

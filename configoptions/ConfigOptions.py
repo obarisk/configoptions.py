@@ -13,7 +13,7 @@ class ConfigOptions():
         '''
         opts = {}
         if len(cfg):
-            for PTH in cfg:
+            for PTH in [os.path.abspath(p) for p in cfg]:
                 if os.path.isdir(PTH):
                     ymls = [x for x in os.listdir(PTH) if x.endswith(".yml")]
                     ymls += [x for x in os.listdir(PTH) if x.endswith(".yaml")]
